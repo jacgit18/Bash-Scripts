@@ -1,0 +1,820 @@
+    1  ll
+    2  ./linux_setup.sh
+    3  sudo aptitude update
+    4  sudo aptitude upgrade
+    5  sudo aptitude -y install nemo
+    6  xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
+    7  gsettings set org.gnome.desktop.background show-desktop-icons false
+    8  gsettings set org.nemo.desktop show-desktop-icons true
+    9  sudo apt -y install apt-transport-https curl
+   10  curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
+   11  echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+   12  sudo aptitude update
+   13  sudo apt -y install brave-browser
+   14  sudo aptitude-add-repository -y ppa:teejee2008/ppa
+   15  sudo aptitude-add-repository ppa:teejee2008/ppa -y
+   16  sudo aptitude-add-repository ppa:teejee2008/ppa 
+   17  sudo apt-add-repository -y ppa:teejee2008/ppa 
+   18  sudo aptitude update && sudo aptitude install timeshift
+   19  sudo aptitude -y install qemu-kvm
+   20  sudo adduser jac kvm && sudo chown jac /dev/kvm
+   21  sudo aptitude -y install ubuntu-restricted-extras
+   22  sudo aptitude -y install gparted
+   23  sudo aptitude -y install autoconf-archive gettext valac pkg-config desktop-file-utils appstream-util libappstream-glib-dev libglib2.0-dev gsettings-desktop-schemas-dev gobject-introspection libgirepository1.0-dev libsqlite3-dev libgom-1.0-dev libgstreamer1.0-dev libgtk-3-dev libcanberra-dev libpeas-dev libappindicator3-dev
+   24  sudo aptitude -y install clamav clamtk
+   25  sudo add-apt-repository -y  ppa:git-core/ppa 
+   26  sudo aptitude update 
+   27  sudo aptitude -y install  git git-extras
+   28  git config --global user.email joshuacarpentier21@gmail.com
+   29  wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
+   30  sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'  -y
+   31  sudo aptitude update && sudo aptitude -y install vivaldi-stable
+   32  sudo add-apt-repository ppa:alexlarsson/flatpak -y
+   33  sudo aptitude update
+   34  sudo aptitude -y install flatpak
+   35  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+   36  sudo aptitude -y install snapd
+   37  sudo snap install snap-store
+   38  sudo nano ~/.config/Cerebro/config.json
+   39  sudo aptitude install -y apache2
+   40  sudo aptitude install -y php7.2 libapache2-mod-php7.2
+   41  sudo aptitude -y install mysql-server
+   42  cd /var/www/html
+   43  sudo touch index.php
+   44  sudo nano index.php
+   45  sudo rm index.html
+   46  sudo aptitude -y install filezilla
+   47  sudo aptitude -y install curl
+   48  curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+   49  sudo aptitude -y install nodejs
+   50  node -v 
+   51  npm -v 
+   52  cd
+   53  sudo aptitude -y install build-essential python-dev python-setuptools python-pip python-smbus
+   54  sudo aptitude -y install libncursesw5-dev libgdbm-dev libc6-dev
+   55  sudo aptitude -y install zlib1g-dev libsqlite3-dev tk-dev
+   56  sudo aptitude -y install libssl-dev openssl
+   57  wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+   58  sudo dpkg -i packages-microsoft-prod.deb
+   59  sudo add-apt-repository universe
+   60  sudo aptitude update
+   61  sudo aptitude -y install apt-transport-https
+   62  sudo aptitude -y install dotnet-sdk-3.1
+   63  sudo aptitude update
+   64  sudo aptitude upgrade
+   65  sudo systemctl stop clamav-freshclam.service
+   66  sudo freshclam
+   67  sudo systemctl start clamav-freshclam.service
+   68  sudo add-apt-repository ppa:linrunner/tlp -y
+   69  sudo aptitude update
+   70  sudo apt -y install tlp tlp-rdw
+   71  sudo systemctl status tlp
+   72  sudo tlp-stat -s 
+   73  sudo aptitude update
+   74  sudo add-apt-repository multiverse -y  && sudo aptitude update
+   75  sudo aptitude -y install steam
+   76  sudo aptitude -y install powertop
+   77  sudo powertop --calibrate
+   78  lear
+   79  clear
+   80  sudo add-apt-repository -y  ppa:slimbook/slimbook 
+   81  sudo aptitude update && sudo aptitude -y install slimbookbattery
+   82  sudo apt -y install openjdk-11-*
+   83  sudo aptitude -y install muon
+   84  sudo aptitude -y install xchm
+   85  sudo aptitude -y install tilda
+   86  sudo aptitude -y install autoconf-archive gettext valac pkg-config desktop-file-utils appstream-util libappstream-glib-dev libglib2.0-dev gsettings-desktop-schemas-dev gobject-introspection libgirepository1.0-dev libsqlite3-dev libgom-1.0-dev libgstreamer1.0-dev libgtk-3-dev libcanberra-dev libpeas-dev libappindicator3-dev
+   87  sudo add-apt-repository -y  ppa:git-core/ppa 
+   88  sudo aptitude update 
+   89  sudo aptitude -y install  git git-extras
+   90  sudo add-apt-repository ppa:webupd8team/atom -y
+   91  sudo aptitude update && sudo aptitude -y install atom
+   92  sudo aptitude update 
+   93  sudo aptitude upgrade
+   94  curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+   95  sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+   96  sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+   97  sudo aptitude update && sudo aptitude -y install code
+   98  sudo nano .bashrc
+   99  sudo aptitude update 
+  100  sudo aptitude upgrade
+  101  ll
+  102  ./setdata.sh
+  103  mongo SectorView.js 
+  104  sudo aptitude -y install mongodb-clients
+  105  sudo aptitude -y install mongodb-server-core
+  106  sudo aptitude update 
+  107  sudo aptitude upgrade
+  108  mongod
+  109  cd ..
+  110  ll
+  111  sudo chown jac:jac -R data/
+  112  ll
+  113  cd
+  114  cd ..
+  115  ll
+  116  cd data
+  117  ll
+  118  cd
+  119  mongod
+  120  sudo aptitude -y install ttf-mscorefonts-installer
+  121  sudo aptitude -y install fontforge
+  122  wget https://gist.github.com/maxwelleite/10774746/raw/ttf-vista-fonts-installer.sh -q -O - | sudo bash
+  123  sudo aptitude -y install xscreensaver
+  124  cd flutter/bin
+  125  ./flutter
+  126  flutter doctor
+  127  flutter doctor --android-licenses
+  128  flutter doctor
+  129  cd
+  130  cat vs_code_extensions_list.txt | xargs -n 1 code --install-extension
+  131  cd Downloads
+  132  cat vs_code_extensions_list.txt | xargs -n 1 code --install-extension
+  133  apm install `cat Atom_plugins.list`
+  134  cd Downloads
+  135  touch Assignment_01.pdf
+  136  ll
+  137  nano Assignment_01.pdf
+  138  touch Assignment_01.txt
+  139  atom Assignment_01.txt
+  140  touch Joshua_Carpentier_Assignment_01.txt
+  141  cd Downloads
+  142  ll
+  143  nano Joshua_Carpentier_Assignment_01.txt
+  144  pwsh
+  145  ls -l /home
+  146  ls
+  147  sudo apt install gnome-shell-extensions gnome-menus gir1.2-gmenu-3.0
+  148  man passwd
+  149  time 60
+  150  sleep 60
+  151  who
+  152  ~/tmp
+  153  cd..
+  154  cd ..
+  155  ~/tmp
+  156  cd ~/tmp
+  157  cd ~/../tmp
+  158  cd ..
+  159  ll
+  160  cd
+  161  cd ~/media
+  162  cd ~/../media
+  163  nemo 
+  164  pwd
+  165  cd ~
+  166  cd Downloads
+  167  cd ~
+  168  pwd
+  169  cd 
+  170  pwd
+  171  ll
+  172  cd ~
+  173  cd De
+  174  cd Desktop/
+  175  cd 
+  176  cd Documents/
+  177  cd /home/jac/Documents/
+  178  cd
+  179  pwd
+  180  ll
+  181  cd Downloads/
+  182  mkdir As_2
+  183  ll
+  184  cd As_2
+  185  rm As_2
+  186  cd ..
+  187  rm As_2
+  188  rm -R As_2
+  189  ls
+  190  clear
+  191  sudo apt-get install lm-sensors
+  192  sudo aptitude install lm-sensors
+  193  sudo sensors-detect
+  194  sensors
+  195  ls -a
+  196  cd .local
+  197  cd 
+  198  cd Downloads/
+  199  pushd /etc
+  200  popd
+  201  file .java
+  202  cd
+  203  ll
+  204  file .jaa
+  205  file .java
+  206  locate fstab
+  207  clear
+  208  sudo updatedb
+  209  locate fstab
+  210  which cal
+  211  cal
+  212  history
+  213  whatis cal
+  214  apropos
+  215  apropos time
+  216  clear
+  217  whatis curl
+  218  history |less
+  219  ls -al / > lsoutput.txt
+  220  ll
+  221  cat lsoutput.txt
+  222  ls -al / > lsoutput.txt
+  223  cat lsoutput.txt
+  224  ls -al / >> lsoutput.txt
+  225  cat lsoutput.txt
+  226  history  / > lsoutput.txt
+  227  history / > lsoutput.txt
+  228  ls history / >> lsoutput.txth
+  229  ls -history / >> lsoutput.txt
+  230  history  
+  231  cd Downloads/
+  232  nano history
+  233  id
+  234  killall firefox 
+  235  whatis curl
+  236  apropos time
+  237  history |less
+  238  apropos 
+  239  whatis apropos
+  240  whatis whatis
+  241  locate fstab
+  242  whatis locate
+  243  locate fstab
+  244  sudo updatedb
+  245  whatis updatedb
+  246  file .java/
+  247  ll
+  248  file .vscode/
+  249  file .wget-hsts
+  250  which firefox 
+  251  pushd /media
+  252  ls
+  253  sudo mkdir BackupDrive
+  254  sudo chown jac:jac BackupDrive
+  255  sudo blkid
+  256  clear
+  257  sudo nano /etc/fstab 
+  258  sudo mount -a
+  259  passwd
+  260  sudo passwd jac
+  261  passwd
+  262  sudo nano /etc/fstab 
+  263  pidof kdeconnectd
+  264  killall -9 kdeconnectd
+  265  pidof kdeconnectd
+  266  sudo aptitude update 
+  267  sudo aptitude upgrade
+  268  sudo apt-get install gnome-shell-pomodoro
+  269  pwd
+  270  ll
+  271  cd Downloads/
+  272  ll
+  273  rm Technical Communication Chp. 1.pptx
+  274  rm 'Technical Communication Chp. 1.pptx'
+  275  ll
+  276  rm 'Oral Presentations.pptx' 
+  277  cd
+  278  clear
+  279  echo "jac"
+  280  echo "brooklyn"
+  281  cd Downloads/
+  282  echo "brooklyn" > bk
+  283  ll
+  284  cat bk
+  285  echo "queens" >> bk
+  286  cat bk
+  287  echo$0 
+  288  echo $ 0 
+  289  echo $0 
+  290  pwsh
+  291  clear
+  292  ll
+  293  touch mynewfile
+  294  ll
+  295  cat mynewfile long_file.txt 
+  296  cat mynewfile 
+  297  clear
+  298  pushd /etc
+  299  pod
+  300  popd
+  301  cat /etc/shells
+  302  history |less
+  303  ll
+  304  long_file.txt |less
+  305  cat long_file.txt 
+  306  long_file.txt |less
+  307  head long_file.txt 
+  308  clear
+  309  head long_file.txt 
+  310  cat long_file.txt 
+  311  clear
+  312  head long_file.txt 
+  313  head -3 long_file.txt 
+  314  tail -3 long_file.txt 
+  315  tail -2 long_file.txt 
+  316  whatis tail
+  317  sort long_file.txt 
+  318  clear
+  319  uniq
+  320  uniq long_file.txt 
+  321  whatis unique
+  322  whatis uniq
+  323  whatis wc
+  324  clear
+  325  ll
+  326  grep bk
+  327  grep 'queens' bk
+  328  whatis grep
+  329  apropos grep
+  330  man grep
+  331  clear
+  332  ll
+  333  diff my_diff_A.txt my_diff_B.txt 
+  334  echo 50 > /sys/class/backlight/intel_backlight/brightness
+  335  whatis chattr
+  336  sudo chattr +i /sys/class/backlight/intel_backlight/brightness
+  337  cd ..
+  338  ll
+  339  cd etc
+  340  ll
+  341  cd default/
+  342  ll
+  343  sudo nano /etc/default/grub 
+  344  sudo aptitude update
+  345  sudo aptitude upgrade
+  346  sudo system76-power graphics
+  347  sudo system76-power graphics intel
+  348  sudo system76-power graphics
+  349  restart
+  350  reboot
+  351  sudo system76-power graphics
+  352  sudo system76-power graphics intel
+  353  sudo system76-power graphics
+  354  reboot
+  355  sudo system76-power graphics
+  356  sudo system76-power graphics hybrid
+  357  sudo system76-power graphics --help
+  358  sudo system76-power graphics switchable
+  359  sudo system76-power graphics power
+  360  sudo system76-power graphics 
+  361  reboot
+  362  sudo system76-power graphics 
+  363  cd root
+  364  ll
+  365  exit
+  366  ls
+  367  cd Downloads/
+  368  ls -l
+  369  ls -L
+  370  touch file-A
+  371  ll
+  372  clear
+  373  ll
+  374  chmod u+x
+  375  chmod u + x
+  376  chmod u+x file-A 
+  377  ll
+  378  clear
+  379  ll
+  380  chmod o-r file-A 
+  381  ll
+  382  chmod a+rwx file-A 
+  383  ll
+  384  clear
+  385  chmod 631 file-A 
+  386  ll
+  387  cd /
+  388  ll
+  389  cd /root
+  390  sudo cd /root
+  391  ll
+  392  sudo su
+  393  ll
+  394  sudo -s
+  395  cd
+  396  clear
+  397  sudo cd /root
+  398  sudo pushd /root
+  399  cd /
+  400  sudo cd /root
+  401  sudo cd root
+  402  clear
+  403  cd 
+  404  pushd /root
+  405  sudo pushd /root
+  406  pushd /etc
+  407  cd
+  408  whatis pushd
+  409  nano 
+  410  ll
+  411  cd Download
+  412  cd Downloads/
+  413  ll
+  414  chmod 777 my_file
+  415  gedit
+  416  atom
+  417  sudo su jac
+  418  cd
+  419  ll
+  420  clear
+  421  cd /
+  422  sudo -s
+  423  sudo systemctl stop clamav-freshclam.service
+  424  sudo freshclam 
+  425  cat /etc/shells 
+  426  ll
+  427  cd Scripts/
+  428  touch hello.sh
+  429  nano hello.sh 
+  430  vim hello.sh 
+  431  cd Scripts/
+  432  vim hello.sh 
+  433  cd Scripts/
+  434  vim hello.sh 
+  435  cat inventory
+  436  whatis echo 
+  437  whatis wger
+  438  whatis wget
+  439  whatis wget-hsts
+  440  file .wget-hsts
+  441  ll
+  442  cd Downloads/
+  443  file .wget-hsts
+  444  whatis echo 
+  445  echo $0 
+  446  ls –aR
+  447  ls –a
+  448  ls
+  449  ls -a
+  450  ls -aR
+  451  clear
+  452  cd Downloads/
+  453  mkdir cst3523 && mkdir shells
+  454  cd cst3523 && mkdir shells
+  455  ll
+  456  cd
+  457  ll
+  458  cd ~
+  459  ll
+  460  vi
+  461  ll
+  462  cd Downloads/
+  463  ll
+  464  vim bk
+  465  cat /etc/shells 
+  466  cd
+  467  cat /etc/shells 
+  468  clear
+  469  echo $0
+  470  /bin/tcsh
+  471  echo $0
+  472  sleep 240 @
+  473  jobs
+  474  /bin/tcsh
+  475  echo $0
+  476  /bin/tcsh
+  477  echo $0
+  478  /bin/tcsh
+  479  echo $0
+  480  clear
+  481  sleep 120
+  482  sleep 240 @
+  483  jobs
+  484  clear
+  485  sleep 600
+  486  sudo systemctl stop clamav-freshclam.service
+  487  sudo freshclam
+  488  sudo systemctl start clamav-freshclam.service
+  489  sleep 600
+  490  jobs
+  491  bg
+  492  sleep 240 &
+  493  jobs
+  494  fg
+  495  jobs
+  496  fg
+  497  jobs
+  498  sudo systemctl stop clamav-freshclam.service
+  499  sudo freshclam
+  500  sudo systemctl start clamav-freshclam.service
+  501  sudo systemctl stop clamav-freshclam.service
+  502  sudo freshclam
+  503  sudo su
+  504  sudo /etc/init.d/clamav-freshclam stop
+  505  sudo freshclam
+  506  sudo systemctl start clamav-freshclam.service
+  507  sudo /etc/init.d/clamav-freshclam stop
+  508  sudo freshclam
+  509  sudo /etc/init.d/clamav-freshclam start
+  510  sudo systemctl start clamav-freshclam.service
+  511  sudo /etc/init.d/clamav-freshclam stop
+  512  sudo freshclam
+  513  sudo systemctl start clamav-freshclam.service
+  514  sudo freshclam
+  515  sudo systemctl stop clamav-freshclam.service
+  516  sudo freshclam
+  517  clear
+  518  cd /etc/cron.daily
+  519  echo ""
+  520  sudo systemctl stop clamav-freshclam.service
+  521  sudo freshclam
+  522  sudo systemctl start clamav-freshclam.service
+  523  ls /bin/*
+  524  ls /bin/ls
+  525  crontab -e
+  526  sudo nano /etc/clamav/freshclam.conf
+  527  sudo freshclam
+  528  sudo add-apt-repository ppa:gezakovacs/ppa
+  529  sudo apt-get install unetbootin
+  530  sudo systemctl stop clamav-freshclam.service
+  531  sudo freshclam
+  532  sudo systemctl start clamav-freshclam.service
+  533  sudo freshclam
+  534  ll
+  535  ls
+  536  sudo apt install netcat
+  537  ns
+  538  nc
+  539  clear 
+  540  cat .basshrc | nc termbin.com 9999
+  541  cat .bashrc | nc termbin.com 9999
+  542  sudo apt install lynx
+  543  lynxhttps://termbin.com/lpdv
+  544  lynx https://termbin.com/lpdv
+  545  sudo apt install Asciinema
+  546  sudo apt install asciinema
+  547  asciinema --help
+  548  asciinema --rec
+  549  asciinema rec
+  550  asciinema play /tmp/tmpva_huzqa-ascii.cast
+  551  asciinema rec
+  552  asciinema auth
+  553  history  
+  554  sleep 240 @
+  555  sleep 240 &
+  556  jobs
+  557  fg
+  558  jobs
+  559  sleep 240 &
+  560  jobs
+  561  fg
+  562  jobs
+  563  sleep 240 &
+  564  jobs
+  565  bg
+  566  fg
+  567  whatis fg
+  568  jobs --help
+  569  cmatrix
+  570  sudo apt install cmatrix
+  571  cmatrix
+  572  cmatrix -C red
+  573  cowsay 
+  574  sudo visudo
+  575  sudo nano
+  576  sudo visudo
+  577  sudo nano
+  578  hollywood
+  579  sudo apt  install hollywood
+  580  hollywood
+  581  /usr/bin/hollywood 
+  582  awk
+  583  cd Downloads/
+  584  ll
+  585  awk my_diff_A.txt
+  586  awk 'my_diff_A.txt'
+  587  history 
+  588  awk '{print}' Downloads/my_diff_A.txt
+  589  awk ' /buy/ {print}' Downloads/my_diff_A.txt
+  590  awk '{print $2,$4 }' Downloads/my_diff_A.txt
+  591  awk '{print $0 }' Downloads/my_diff_A.txt
+  592  awk '/buy/' Downloads/my_diff_A.txt
+  593  awk '$1 == "buy" {print $2}' Downloads/my_diff_A.txt
+  594  awk '$4 == "buy" {print $2}' Downloads/my_diff_A.txt
+  595  awk '$2 == "need" {print $5}' Downloads/my_diff_A.txt
+  596  awk '$3 == "to" {print $5}' Downloads/my_diff_A.txt
+  597  awk '$3 == "to" {print $6}' Downloads/my_diff_A.txt
+  598  awk '{print $0 }' Downloads/my_diff_A.txt
+  599  awk '$4 ~ "u" {print $6}' Downloads/my_diff_A.txt
+  600  awk '$4 ~ "u" {print $4}' Downloads/my_diff_A.txt
+  601  head Downloads/my_diff_A.txt
+  602  head -1 Downloads/my_diff_A.txt
+  603  sed 1q Downloads/my_diff_A.txt
+  604  awk '{print NR,$0}' Downloads/my_diff_A.txt
+  605  awk '{print NR,$1}' Downloads/my_diff_A.txt
+  606  awk '{print NR,$4}' Downloads/my_diff_A.txt
+  607  awk '(NR>=0){print}' Downloads/my_diff_A.txt
+  608  awk '(NR>=1){print}' Downloads/my_diff_A.txt
+  609  awk '(NR>=0 && NR<=2){print}' Downloads/my_diff_A.txt
+  610  awk '{print $1,$NF}' Downloads/my_diff_A.txt
+  611  awk '{print $NF}' Downloads/my_diff_A.txt
+  612  awk '{$NF}' Downloads/my_diff_A.txt
+  613  awk '{print $NF, $NF}' Downloads/my_diff_A.txt
+  614  awk '{print $0 }' Downloads/my_diff_A.txt
+  615  grep -i 'dir'
+  616  sudo nano Downloads/my_diff_A.txt
+  617  awk '{print $0 }' Downloads/my_diff_A.txt
+  618  grep -i 'dir' Downloads/my_diff_A.txt
+  619  sed '/[Dd]ir/!d' Downloads/my_diff_A.txt
+  620  awk 'tolower($0) ~ /dir/' Downloads/my_diff_A.txt
+  621  ls DoWn
+  622  ls Downloads/
+  623  clear
+  624  ls
+  625  ls Downloads/
+  626  awk '{print}' Downloads/my_diff_1.txt
+  627  awk '/manager/ {print}' Downloads/my_diff_1.txt
+  628  awk '/home/ {print}' Downloads/my_diff_1.txt
+  629  awk '{print $1,$4 }' Downloads/my_diff_1.txt
+  630  whatis cat
+  631  whatis echo
+  632  whatis grep
+  633  clear
+  634  asciinema rec
+  635  asciinema play https://asciinema.org/a/024RHtv1jBR6g2nD6bfWJD9ce
+  636  clear
+  637  asciinema play https://asciinema.org/a/024RHtv1jBR6g2nD6bfWJD9ce
+  638  clear
+  639  asciinema --help
+  640  asciinema rec -t "My git tutorial"
+  641  ls Downloads/my_diff_1.txt
+  642  cat Downloads/my_diff_1.txt
+  643  cat Downloads/my_diff_A.txt
+  644  asciinema play https://asciinema.org/a/024RHtv1jBR6g2nD6bfWJD9ce
+  645  clear
+  646  sudo dpkg -i lsd_7.2.0_amd64.deb
+  647  sudo dpkg -i sudo dpkg -i lsd_7.2.0_amd64.deb
+  648  sudo dpkg -i lsd_7.2.0_amd64.deb
+  649  sudo dpkg -i lsd_0.16.0_i386.deb
+  650  sudo dpkg -i lsd-musl_0.16.0_i386.deb
+  651  clear
+  652  lsd
+  653  sudo snap install lsd
+  654  lsd
+  655  lsd -a
+  656  lsd -h
+  657  lsd --help
+  658  lsd -l
+  659  lsd -la
+  660  lsd -F
+  661  clear
+  662  sudo aptitude update 
+  663  sudo aptitude upgrade 
+  664  lsd -h
+  665  lsd --help
+  666  lsd ----icon
+  667  lsd --icon
+  668  lsd --icon-theme 
+  669  clear
+  670  lsd --tree 
+  671  clear
+  672  lsd
+  673  lsd -la
+  674  lsd
+  675  lsd -la
+  676  htop
+  677  sudo apt install font-manager 
+  678  lsd
+  679  lsd -la
+  680  acpi_listen 
+  681  acpi_listen
+  682  man acpi_listen 
+  683  tldr acpi_listen
+  684  sudo apt  install tldr   
+  685  tldr acpi_listen
+  686  tldr ls
+  687  lsd
+  688  lsd -la
+  689  cd ..
+  690  lsd -la
+  691  lsd
+  692  br
+  693  whatis wget
+  694  cd Downloads/
+  695  vim kl
+  696  asciinema --help
+  697  asciinema rec -t "Vim Tutorial"
+  698  clear
+  699  vimtutor 
+  700  acpi_listen
+  701  Iw_list
+  702  Hciconfig
+  703  Mmcli
+  704  sudo snap network-manager
+  705  sudo snap install network-manager
+  706  sudo hw-probe
+  707  sudo snap connect hw-probe:$i
+  708  sudo snap install hw-probe
+  709  sudo hw-probe
+  710  plugs: [hardware-observe, mount-observe, network-observe, network-setup-observe, physical-memory-observe, system-observe, upower-observe, log-observe, home, broadcom-asic-control, opengl]
+  711  byobu-disable
+  712  sudo iwlist wlan0 scan | grep Frequency | sort | uniq -c | sort -n
+  713  iwconfig Interface-Name-Here
+  714  iwcon wlan0
+  715  iw wlan0
+  716  iw Interface-Name-Here
+  717  clear
+  718  iw phy
+  719  clear
+  720  iw phy
+  721  clear
+  722  speaker-test -t wav -c 6
+  723  speaker-test 
+  724  pulseaudio
+  725  aplay -l
+  726  alsamixer 
+  727  sudo aptitude install dxvk lutris
+  728  sudo dpkg --add-architecture i386 
+  729  wget -nc https://dl.winehq.org/wine-builds/winehq.key
+  730  sudo apt-key add winehq.key
+  731  sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
+  732  sudo aptitude update
+  733  sudo apt install --install-recommends winehq-stable
+  734  sudo aptitude install --install-recommends winehq-stable
+  735  sudo apt install --install-recommends winehq-stable
+  736  sudo apt autoremove
+  737  sudo apt install --install-recommends winehq-stable
+  738  sudo apt-add-repository --remove 'deb http://dl.winehq.org/wine-builds/ubuntu/ bionic main'
+  739  sudo aptitude update
+  740  sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
+  741  sudo aptitude update
+  742  sudo aptitude upgrade
+  743  sudo apt update && sudo apt install --install-recommends winehq-stable
+  744  lds
+  745  lsd
+  746  festival --tts my_diff_2.txt
+  747  cd
+  748  sudo apt install festival
+  749  sudo apt install festival-us
+  750  festival --tts my_diff_2.txt
+  751  cd /home/jac/Documents
+  752  festival --tts my_diff_2.txt
+  753  xsel | festival --tts
+  754  sudo apt install xsel
+  755  xsel | festival --tts
+  756  sudo apt install festival-us
+  757  sudo aptiitude install festival-us
+  758  sudo aptitude install festival-us
+  759  cd
+  760  nano .festivalrc
+  761  clear
+  762  festival
+  763  nano .festivalrc
+  764  festival
+  765  nano .festivalrc
+  766  lds
+  767  lsd
+  768  lsd -la
+  769  sudo nano .festivalrc
+  770  xsel | festival --tts
+  771  festival
+  772  xsel | festival --tts
+  773  festival
+  774  sudo nano .festivalrc
+  775  xsel | festival --tts
+  776  sudo nano .festivalrc
+  777  xsel | festival --tts
+  778  festival --help
+  779  clear
+  780  xsel | festival --tts
+  781  aptitude --help
+  782  xsel | festival --tts
+  783  Festival
+  784  sudo apt install festival Festival-us
+  785  sudo apt install festival festival-us
+  786  sudo apt install festival-us
+  787  sudo apt install festival-english 
+  788  sudo -E hw-probe
+  789  sudo -E hw-probe -all -upload
+  790  nemo Downloads/
+  791  lsd
+  792  chmod +x ./hw-probe-1.5-149-x86_64.AppImage
+  793  ll
+  794  ./hw-probe-1.5-162-x86_64.AppImage
+  795  lsd
+  796  chmod +X ./hw-probe-1.5-162-x86_64.AppImage
+  797  sudo -E ./hw-probe-1.5-162-x86_64.AppImage -all -upload
+  798  lsd
+  799  sudo -E ./hw-probe-1.5-149-x86_64.AppImage -all -upload
+  800  flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+  801  sudo flatpak install flathub org.linux_hardware.hw-probe
+  802  sudo -E flatpak run org.linux_hardware.hw-probe -all -upload
+  803  -E flatpak run org.linux_hardware.hw-probe -all -upload
+  804  flatpak run org.linux_hardware.hw-probe -all -upload
+  805  xsel | festival --tts
+  806  sudo aptitudeupd
+  807  sudo aptitude update 
+  808  sudo aptitude upgrade
+  809  sudo apt full-upgrade
+  810  pop-upgrade release upgrade systemd
+  811  sudo apt install sessioninstaller
+  812  sudo apt install pop_desktop
+  813  sudo apt install pop-desktop
+  814  pop-upgrade release upgrade systemd
+  815  sudo aptitude full-upgrade
+  816  apt search firefox
+  817  aptitude search firefox
+  818  clear
+  819  history 
+  820  history > history_for_print.txt

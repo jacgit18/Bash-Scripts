@@ -1,0 +1,11 @@
+sudo apt install aptitude 
+sudo aptitude-add-repository -y ppa:teejee2008/ppa
+sudo aptitude update && sudo aptitude install timeshift
+
+
+joshuacarpentier21@gmail.com
+
+Galaxyfox18
+
+
+Galaxykey2018

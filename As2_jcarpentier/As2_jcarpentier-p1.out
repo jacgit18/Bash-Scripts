@@ -1,0 +1,55 @@
+my name is
+/home/jac/Documents/Terminal created file/As2_jcarpentier
+Joshua  Carpentier 
+my login shell is /bin/bash
+var var_1 is:  brooklyn
+bob
+123
+----------------------------
+car
+ first element in array: car
+ second element in array: mars
+ all elements in array: car mars list dream bob
+ all elements in array with @: car mars list dream bob
+ element length array: 3
+car pluto list dream bob
+-----------
+var_d
+one
+two
+three
+four
+-----------
+three two one zero
+-----------
+Now the first argument  is: zero
+Now the first argument  is: one
+Now the first argument  is: two
+Now the first argument  is: three
+-------------
+-------------
+“Words match.”
+-----------
+“0”
+“1”
+“2”
+“3”
+“4”
+“5”
+“6”
+“7”
+“8”
+“9”
+“10”
+------------
+--------------
+“0”“1”“2”“3”“4”“5”“6”“7”“8”“9”--------------
+“we continue“
+“we continue“
+“we continue“
+“I print index: 4”
+“I print index: 5”
+“I print index: 6”
+“I print index: 7”
+“I print index: 8”
+“we break“

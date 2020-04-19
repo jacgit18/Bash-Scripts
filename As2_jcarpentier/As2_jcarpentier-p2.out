@@ -1,0 +1,29 @@
+--Joshua Carpentier ------------
+“Response to Assignment 2, Part 2, Problem 1”
+Wed Apr  1 10:52:02 EDT 2020
+my login shell is /bin/bash
+
+/home/jac/Documents/Terminal created file/As2_jcarpentier
+/home/jac
+Cst_3523 Cst_4708 Cst_4800 Cst_4900 Eng_2575
+-----------
+“Response to Assignment 2, Part 2, Problem 2”
+-----------
+ These are all the CST courses I completed: Cst_1100 Cst_1101 Cst_1201 Cst_1204 Cst_1215 Cst_2301 Cst_2307 Cst_2309 Cst_2400 Cst_2410 Cst_2415 Cst_2801 Cst_3513 Cst_3519 Cst_3606 Cst_3613 Cst_3650
+ Fourth class: Cst_1204
+ element length array: 17
+ These are all the CST courses I completed: Cst_1100 Cst_1101 Queens Cst_1204 Cst_1215 Cst_2301 Cst_2307 Cst_2309 Cst_2400 Cst_2410 Cst_2415 Cst_2801 Cst_3513 Cst_3519 Cst_3606 Cst_3613 Cst_3650
+-----------
+“Response to Assignment 2, Part 2, Problem 3”
+-----------
+zero pos par is: ./As2_jcarpentier-p2.sh
+first pos par is: one
+second pos par is: two
+third pos par is: three
+one
+-----------
+“Response to Assignment 2, Part 2, Problem 4”
+-----------
+/home/jac/mongodb/mongodb-linux-x86_64-2.4.9/bin:/home/jac/mongodb/mongodb-linux-x86_64-2.4.9/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jac/Documents/Terminal created file/As2_jcarpentier/flutter/bin:/home/jac/flutter/bin:/home/jac/tools/bin:/home/jac/script:/home/jac/Documents/Terminal created file/As2_jcarpentier/flutter/bin:/home/jac/flutter/bin:/home/jac/tools/bin:/home/jac/script
+/home/jac/:/home/jac/mongodb/mongodb-linux-x86_64-2.4.9/bin:/home/jac/mongodb/mongodb-linux-x86_64-2.4.9/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jac/Documents/Terminal created file/As2_jcarpentier/flutter/bin:/home/jac/flutter/bin:/home/jac/tools/bin:/home/jac/script:/home/jac/Documents/Terminal created file/As2_jcarpentier/flutter/bin:/home/jac/flutter/bin:/home/jac/tools/bin:/home/jac/script
+-----------
