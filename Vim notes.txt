@@ -1,0 +1,80 @@
+I need to buy apples.
+I need to get the car detailed.
+I need to run the laundry.
+I need to wash the dog.
+dir
+Dir
+
+Shift a in command mode takes you into insert mode at end of line
+s delete first character and enter insert
+o goes to next line and enter insert mode 
+
+cw gets rid of word than takes you into insert mode
+Shift c deletes line and enters insert mode
+yw copies a  word
+y$ copies from cursor to end of line
+rid 
+word than takes you into insert mode
+
+
+crtl o goes to the line you where on than crtl i takes you foward
+
+
+zero takes you to the begining of a line 
+linenuber + shift g takes you to line number 32G
+w goes word by word e goes word by word at the last letter
+or 2w
+
+2u undoes last two change
+
+c change e for end of word gets rid of work and put yuo in insert mode
+
+c$ gets rid of entire line
+
+r than replacement letter  
+
+just vs split views the same file
+you want to do this if lloking at large file 
+and want copy something on another 
+part
+
+dd is like cut and you can past with p
+/dir
+
+:split filename lets you display two files than crtl ww to switch between
+vsplit is side by side
+
+gg takes you to top of file shift g too the bottome
+
+after highlighting you cant type : then some comes up then type sort ui to order
+highlited text in alphabet order
+
+used x in command mode not insert mode to delete text than pressed u to undo the delete
+press dd fast to getrid of line of text
+:r filename in command mode just added the contents of another file to the end of this
+file
+
+
+v in command mode gets you in visual mode which lets highlight an copy
+
+
+hjkl controls directions to move around in like up down left right
+
+
+sudo apt install aptitude 
+sudo aptitude-add-repository -y ppa:teejee2008/ppa
+sudo aptitude update && sudo aptitude install timeshift
+
+vvvvvv
+
+v in command mode gets you in visual mode which lets highlight an copy
+when is visual mode use arrow key to gothrough line you want to copy
+then press y to copy p to paste it after picking a place
+
+
+joshuacarpentier21@gmail.com
+
+Chickenfox18
+
+
+Greenkey2018

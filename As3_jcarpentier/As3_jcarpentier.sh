@@ -53,11 +53,11 @@ function  PosParamChecker (){
 
 # command is executed and the if statement acts according to its exit code.
 
-if [[ -f ./"$1" ]]; then
-    echo "$1" exists
-elif [[ ! -f ./"$1" ]]; then 
-  echo "$1 file doesnt exist in dir"
-elif [[ $# -eq 0 ]]; then 
+if [[ $# -eq 0 ]]; then 
+  echo "no argument passed"
+else
+  arg=("$@")
+  E
   echo "no argument passed"
 fi
 }
@@ -82,7 +82,7 @@ function usage (){
 echo "This is a script for assignment 3 to test positional parameters and other things"
 echo "like the getopts which takes option -x -y -z"
 
-echo "--------------------------------------------------------------------------------"
+echo "----------------------------------------------------------------"
 script_name2=`basename "$(realpath $0)"`
 echo $script_name2
 
