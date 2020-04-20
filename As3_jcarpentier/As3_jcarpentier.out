@@ -1,0 +1,36 @@
+====Joshua Carpentier====
+
+==========Master Function==========
+This is part 1 of Assignment 3
+=============================
+no argument passed
+
+This is part 2 of Assignment 3
+===============================
+This is a script for assignment 3 to test positional parameters and other things
+like the getopts which takes option -x -y -z
+----------------------------------------------------------------
+As3_jcarpentier.sh
+Script-Dir-Relative : .
+
+Script Path 2: /home/jac/Documents/Bash_Scripts/As3_jcarpentier
+
+This is part 3 of Assignment 3
+===============================
+Directory Garbage exists. 
+
+This is part 4 of Assignment 3
+==============================
+What is your first name
+joshua
+
+What is your last name
+carpentier
+
+Your first name is joshua and last name is carpentier
+
+This is part 5 of Assignment 3
+==============================
+-x was triggered, Parameter: 
+-y was triggered, Parameter: 
+-z was triggered, Parameter: 
