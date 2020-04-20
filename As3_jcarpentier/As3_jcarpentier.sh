@@ -52,13 +52,15 @@ function  PosParamChecker (){
 # if command
 
 # command is executed and the if statement acts according to its exit code.
+touch test.txt
+value=$(<test.txt)
 
 if [[ $# -eq 0 ]]; then 
   echo "no argument passed"
-else
-  arg=("$@")
-  E
-  echo "no argument passed"
+elif [[ ! -f ./"$1" ]]; then 
+  echo "$1 file doesnt exist in dir"
+elif [[ -f ./"$1=/test" ]]; then
+  echo "$1" exists
 fi
 }
 
@@ -79,6 +81,7 @@ function usage (){
 
 #script_name1=`basename $0`
 #echo $script_name1
+
 echo "This is a script for assignment 3 to test positional parameters and other things"
 echo "like the getopts which takes option -x -y -z"
 
