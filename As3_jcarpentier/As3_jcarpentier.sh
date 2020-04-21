@@ -63,7 +63,7 @@ elif [[ -f ./"$1=/test" ]]; then
   echo "$1" exists
 fi
 
-#zip -r As3_jcarpentier ../As3_jcarpentier
+zip -r As3_jcarpentier ../As3_jcarpentier
 
 }
 
@@ -137,7 +137,7 @@ function NameGetter (){
 #    checks if both of the variables are not empty (check if the user entered at least 2 strings)
 #    prints to screen terminal user’s first name
 
-
+echo "the read command mess with out put redirection to other file"
 echo "What is your first name"
 read firstname 
 echo
