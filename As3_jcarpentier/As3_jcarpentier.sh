@@ -62,6 +62,9 @@ elif [[ ! -f ./"$1" ]]; then
 elif [[ -f ./"$1=/test" ]]; then
   echo "$1" exists
 fi
+
+#zip -r As3_jcarpentier ../As3_jcarpentier
+
 }
 
 function usage (){
