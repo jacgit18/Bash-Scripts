@@ -1,5 +1,5 @@
 #!/bin/bash -eux
 
-iw phy
+speaker-test -t wav -c 6
 
 exit 0
