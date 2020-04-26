@@ -1,4 +1,4 @@
-#!/bin/bash -eux
+#!/bin/bash -e
 
 echo 'export PATH="/home/jac/mongodb/mongodb-linux-x86_64-2.4.9/bin:$PATH"' >> ~/.bashrc                                                                               
 echo 'export PATH="$PATH:`pwd`/flutter/bin"' >> ~/.bashrc                                            
