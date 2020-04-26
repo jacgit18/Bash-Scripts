@@ -1,4 +1,3 @@
-jac@jac-GE62-6QF:~/Documents/Bash_Scripts/As3_jcarpentier$ ./As3_jcarpentier.sh -xyz test 
 
 ====Joshua Carpentier====
 
@@ -6,44 +5,14 @@ jac@jac-GE62-6QF:~/Documents/Bash_Scripts/As3_jcarpentier$ ./As3_jcarpentier.sh 
 This is part 1 of Assignment 3
 =============================
 no argument passed
-
-This is part 2 of Assignment 3
-===============================
-This is a script for assignment 3 to test positional parameters and other things
-like the getopts which takes option -x -y -z
-----------------------------------------------------------------
-As3_jcarpentier.sh
-Script-Dir-Relative : .
-
-Script Path 2: /home/jac/Documents/Bash_Scripts/As3_jcarpentier
-
-This is part 3 of Assignment 3
-===============================
-Directory Garbage exists. 
-
-This is part 4 of Assignment 3
-==============================
-What is your first name
-Joshua 
-
-What is your last name
-Carpentier
-
-Your first name is Joshua and last name is Carpentier
-
-This is part 5 of Assignment 3
-==============================
--x was triggered, Parameter: 
--y was triggered, Parameter: 
--z was triggered, Parameter: test
-jac@jac-GE62-6QF:~/Documents/Bash_Scripts/As3_jcarpentier$ ./As3_jcarpentier.sh -xyz test 
-
-====Joshua Carpentier====
-
-==========Master Function==========
-This is part 1 of Assignment 3
-=============================
-no argument passed
+updating: ../As3_jcarpentier/ (stored 0%)
+updating: ../As3_jcarpentier/As3_jcarpentier.out (deflated 43%)
+updating: ../As3_jcarpentier/test (stored 0%)
+updating: ../As3_jcarpentier/Garbage/ (stored 0%)
+updating: ../As3_jcarpentier/test.txt (stored 0%)
+updating: ../As3_jcarpentier/As3_jcarpentier.sh (deflated 65%)
+updating: ../As3_jcarpentier/ClassAssignment.sh (deflated 58%)
+updating: ../As3_jcarpentier/tester (stored 0%)
 
 This is part 2 of Assignment 3
 ===============================
@@ -63,17 +32,10 @@ This is part 4 of Assignment 3
 ==============================
 the read command mess with out put redirection to other file
 What is your first name
-Joshua 
 
 What is your last name
-Carpentier
 
-Your first name is Joshua and last name is Carpentier
+Your first name is joshua and last name is carpentier
 
 This is part 5 of Assignment 3
 ==============================
--x was triggered, Parameter: 
--y was triggered, Parameter: 
--z was triggered, Parameter: test
-jac@jac-GE62-6QF:~/Documents/Bash_Scripts/As3_jcarpentier$ 
-
