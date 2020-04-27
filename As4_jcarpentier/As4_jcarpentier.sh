@@ -4,7 +4,12 @@
 
 
 function  AwkGetter (){
-   awk -f As4_jcarpentier.awk salary_file.txt
+# awk -f As4_jcarpentier.awk salary_file.txt
+  
+echo "What is your file name"
+read filename 
+awk -f filename salary_file.txt
+
 # Ask a user to input a file name with AWK program 
 # (e.g., user can type As4_yourName.awk and you should
 # test your script with this file). Use read command to 
