@@ -1,6 +1,7 @@
 #!/bin/bash -e
 
 function  AwkGetter (){
+    
 #As4_jcarpentier.awk salary_file.txt
 echo "What is your awk and txt file name";
 
