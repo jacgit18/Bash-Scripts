@@ -4,11 +4,11 @@
 
 
 function  AwkGetter (){
-# awk -f As4_jcarpentier.awk salary_file.txt
+ awk -f As4_jcarpentier.awk salary_file.txt
   
-echo "What is your file name"
-read filename 
-awk -f filename salary_file.txt
+#echo "What is your file name"
+#read filename 
+#awk -f filename salary_file.txt
 
 # Ask a user to input a file name with AWK program 
 # (e.g., user can type As4_yourName.awk and you should
@@ -57,18 +57,15 @@ awk -f filename salary_file.txt
 
 
 function FuncCall (){
-echo "====Joshua Carpentier===="
 echo
 echo "Solution to Assignment 4, Part 2"
-echo "This is part 1 of Assignment 3"
-echo "============================="
+echo "================================"
 AwkGetter
 
 #zip -r As4_jcarpentier ../As4_jcarpentier
 
 }
 
-echo "==========Master Function=========="
 FuncCall
 
 
