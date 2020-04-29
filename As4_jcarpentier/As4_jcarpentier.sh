@@ -1,40 +1,40 @@
 #!/bin/bash -e
 
-
-
-
 function  AwkGetter (){
- awk -f As4_jcarpentier.awk salary_file.txt
-  
-#echo "What is your file name"
-#read filename 
-#awk -f filename salary_file.txt
+#As4_jcarpentier.awk salary_file.txt
+echo "What is your awk and txt file name";
 
-# Ask a user to input a file name with AWK program 
-# (e.g., user can type As4_yourName.awk and you should
-# test your script with this file). Use read command to 
-# prompt user to enter a file name and store it in a variable
-# (e.g., in a variable var_1).  
+#echo "What is your awk and txt file name";
+read awkFile txtFile
+#echo "What is your txt file name";
+#read txtFile;
 
-# Check if the user entered a valid file name 
-#  a. check if a file exists 
-#  b. check if a file is executable 
-#  c. check if the file has extension .awk, hence consist of an AWK program 
+#  check if a file exists, if a file is readable or if the file has extension .txt
  
-# 4. Ask a user to input a file name with input data 
-# (e.g., user can type salary_file.txt and you should 
-# test your script with this file). Use read command 
-# to prompt user to enter a file name and store it in
-# a variable (e.g., in a variable var_2).  
- 
-# 5. Check if the user entered a valid file name 
-#  a. check if a file exists 
-#  b. check if a file is readable 
-#  c. check if the file has extension .txt  
+if [[ -f ./"$awkFile" && -x ./"$awkFile" && ${file: -4} == ".awk" ]]; then 
+    echo "file exist is executable and ends with awk extension";
+else
+    echo "There is no file that exist or is executable or ends with awk extension";
+    exit 1
+fi
+
+#  check if a file exists, if a file is executable or if the file has extension .awk
+if [[ -f ./"$txtFile" && -r ./"$txtFile" && ${file: -4} == ".txt" ]]; then 
+
+  echo "file exist is readable and ends with txt extension";
+else
+    echo "There is no file that exist or is readable or ends with txt extension";
+    exit 1
+fi
+awk -f $awkFile $txtFile;
+
+#awk -f $awkFile salary_file.txt;
+#awk -f $1 $2;
+#awk -f $awkFile $1; # find out how to pass file as positional parameter
+
+
   
-# 6. Print to a screen/terminal message that validation in points 3. And 4.
-# above were successful and run the AWK program with the input file that 
-# user entered (e.g.,  awk -f $var_1 $var_2) 
+
  
 # 7. Or, if a file with AWK program does not satisfy any of 3.a.-3.c 
 # or a readable input file does not exist 

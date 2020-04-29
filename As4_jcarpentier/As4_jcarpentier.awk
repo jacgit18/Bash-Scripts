@@ -14,8 +14,9 @@ BEGIN	{
     print strftime(format);
     print "Solution to Assignment 4, Part 1";
     print "=================================";
-    print "======Started======="; 
-
+    print " ";
+    print "==============================Started==================================="; 
+    print " ";
     total;
     sum;
     HighestPaid;
@@ -42,6 +43,8 @@ BEGIN	{
 
 {total = $2 * $3; $4 = total;}  $4 < 100    {print " This employee named " $1 " total salary is "  "$"$4}
 
+#store and sort
+
 # Printing names of all employees with hourly wages less than $10 per hour  
  $2 < 10 {print " This person " $1 " made a low amount of " "$"$2 " per hour"}
          
@@ -64,8 +67,7 @@ NR == 1 {LeastHours = $1; min = $3}
 NF==4{count++}
 
 END {
-
-print "======Finished======="; 
+print "==============================Finished==================================="; 
 
 print FILENAME;
 
