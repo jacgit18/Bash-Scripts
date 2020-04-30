@@ -52,16 +52,27 @@ function  PosParamChecker (){
 # 5. if command
 # command is executed and the if statement acts according to its exit code.
 touch test.txt
-value=$(<test.txt)
+mb=$#
+pt=$@
 
-if [[ $# -eq 0 ]]; then 
-  echo "no argument passed"
-elif [[ ! -f ./"$1" ]]; then 
-  echo "$1 file doesnt exist in dir"
-elif [[ -f ./"$1=/test" ]]; then
-  echo "$1" exists
+if [[ $mb -gt 0 ]]; 
+then 
+      echo "positional param is $#"
+    for i in $pt;  do
+     if [[ -e "$i" ]]; 
+     then
+        echo
+        echo " file '$i' Exist"
+    else
+      echo
+      echo "file '$i' not found"
+   fi  
+  done
+else
+    echo
+    echo "no param"
+    usage
 fi
-
 zip -r As3_jcarpentier ../As3_jcarpentier
 
 }
@@ -117,8 +128,9 @@ function garbagecheck (){
 #        if yes, print to screen/terminal message stating successful creation of ~/Garbage directory
 #        if not, print to screen/terminal a message stating that it could not be created
 #mkdir ~/name
+#mkdir Garbage
 
-  if [ -d "/home/jac/Documents/Bash Scripts/As3_jcarpentier/Garbage" ] 
+  if [[ -d "/home/jac/Documents/Bash Scripts/As3_jcarpentier/Garbage" ]] 
 then
     echo "Directory Garbage exists. " 
 else
@@ -198,16 +210,16 @@ FuncCall
 # doesnt look l:)       echo "Option -$OPTARG requires an argument." >&2       exit 1       ;;   ike you can pass multiple parameters in this format xyz: 
 while getopts "xyZ:" opt_var1; do
     case $opt_var1 in
-          x) echo "-x was triggered, Parameter: ${OPTARG}" >&2;;
-          y) echo "-y was triggered, Parameter: ${OPTARG}" >&2;;
+          x) echo "-x was triggered, Parameter: ${OPTARG}" >&2 ;;
+          y) echo "-y was triggered, Parameter: ${OPTARG}" >&2 ;; # exit 1;;
           z) echo "-z was triggered, Parameter: ${OPTARG}" >&2;;
-          # need these two explained
-         \?) echo "Invalid option: ${OPTARG}" >&2  ;;     
-         :)  echo "Option -$OPTARG requires an argument." >&2 ;;   
+         \?) echo "Invalid option: ${OPTARG}" >&2  ;; # store option not given     
+         :)  echo "Option -$OPTARG requires an argument." >&2 ;; # check if arg before or after semi colon  
     esac
 done
 exit 0
 
+#aovide exit 1 one you will exit to much
 
 
 function Notes (){
