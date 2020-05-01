@@ -14,9 +14,7 @@ sudo add-apt-repository -y ppa:obsproject/obs-studio
 sudo apt -y install aptitude
 sudo aptitude -y update && sudo aptitude -y upgrade
 
-wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
-sudo add-apt-repository -y 'deb https://repo.vivaldi.com/archive/deb/ stable main'  
-sudo aptitude -y update && sudo aptitude -y install vivaldi-stable
+
 
 sudo aptitude -y install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
