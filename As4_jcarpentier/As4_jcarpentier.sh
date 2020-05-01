@@ -1,18 +1,18 @@
 #!/bin/bash -e
-
+need to fix extension detection
 function  AwkGetter (){
     
-#As4_jcarpentier.awk salary_file.txt
+# As4_jcarpentier.awk salary_file.txt
 echo "What is your awk and txt file name";
 
-#echo "What is your awk and txt file name";
+#echo "What is your awk file name";
 read awkFile txtFile
 #echo "What is your txt file name";
 #read txtFile;
 
 #  check if a file exists, if a file is readable or if the file has extension .txt
  
-if [[ -f ./"$awkFile" ]]; then 
+if [[ -f ./"$awkFile" && -x ./"$awkFile" ]]; then 
     echo "file exist is executable and ends with awk extension";
 else
     echo "There is no file that exist or is executable or ends with awk extension";
@@ -20,7 +20,7 @@ else
 fi
 
 #  check if a file exists, if a file is executable or if the file has extension .awk
-if [[ -f ./"$txtFile" ]]; then 
+if [[ -f ./"$txtFile" && -r ./"$txtFile" ]]; then 
 
   echo "file exist is readable and ends with txt extension";
 else
