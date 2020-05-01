@@ -8,7 +8,6 @@ sudo add-apt-repository -y ppa:slimbook/slimbook
 sudo apt-add-repository -y ppa:system76-dev/stable 
 sudo apt-add-repository -y ppa:teejee2008/ppa
 sudo add-apt-repository -y ppa:git-core/ppa 
-sudo add-apt-repository -y ppa:alexlarsson/flatpak 
 sudo add-apt-repository -y ppa:obsproject/obs-studio
 
 
