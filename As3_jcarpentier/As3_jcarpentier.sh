@@ -51,7 +51,8 @@ function  PosParamChecker (){
 
 # 5. if command
 # command is executed and the if statement acts according to its exit code.
-touch test.txt
+touch test.txt # or
+>your8.txt # which makes a file
 mb=$#
 pt=$@
 

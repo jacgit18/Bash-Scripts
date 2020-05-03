@@ -1,7 +1,8 @@
 #!/bin/bash -e
 #need to fix extension detection
 function  AwkGetter (){
-    
+    >your8.txt # which makes a file
+
 # As4_jcarpentier.awk salary_file.txt
 echo "What is your awk and txt file name";
 read awkFile txtFile;
