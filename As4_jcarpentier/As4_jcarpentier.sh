@@ -8,8 +8,7 @@ read awkFile txtFile;
 
 
 #  check if a file exists, if a file is readable or if the file has extension .awk
- file1=".awk"
-if [[ -f ./"$awkFile" && -x ./"$awkFile" && ${file1: -4 } == ".awk" ]]; then 
+if [[ -f ./"$awkFile" && -x ./"$awkFile" && ${awkFile: -4 } == ".awk" ]]; then 
     echo "file exist is executable and ends with awk extension";
 else
     echo "There is no file that exist or is executable or ends with awk extension";
@@ -17,8 +16,7 @@ else
 fi
 
 #  check if a file exists, if a file is executable or if the file has extension .txt
- file2=".txt"
-if [[ -f ./"$txtFile" && -r ./"$txtFile" && ${file2: -4} == ".txt" ]]; then 
+if [[ -f ./"$txtFile" && -r ./"$txtFile" && ${txtFile: -4} == ".txt" ]]; then 
 
   echo "file exist is readable and ends with txt extension";
 else
