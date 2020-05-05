@@ -1,0 +1,144 @@
+
+Solution to Assignment 4, Part 2
+================================
+What is your awk and txt file name
+file exist is executable and ends with awk extension
+file exist is readable and ends with txt extension
+My name is Joshua Carpentier
+May/05/2020
+Solution to Assignment 4, Part 1
+=================================
+ 
+==============================Started===================================
+ 
+ This person who is named Adams is within the range of names asked for
+ This person who is named Alarcon is within the range of names asked for
+ This person who is named Allem is within the range of names asked for
+ This person who is named Armour is within the range of names asked for
+ This person who is named Aubrey is within the range of names asked for
+ This person who is named Austin is within the range of names asked for
+ This person who is named Barron is within the range of names asked for
+ This person Bean made a low amount of $7 per hour
+ This person who is named Bean is within the range of names asked for
+ This person Beck made a low amount of $5 per hour
+ This person who is named Beck is within the range of names asked for
+ This person who is named Berganio is within the range of names asked for
+ This person who is named Bertsch is within the range of names asked for
+ This person who is named Blackmar is within the range of names asked for
+ This person who is named Blake is within the range of names asked for
+ This person who is named Boros is within the range of names asked for
+ This person who is named Bowden is within the range of names asked for
+ This person who is named Bradley is within the range of names asked for
+ This person who is named Brisky is within the range of names asked for
+ This person who is named Brooks is within the range of names asked for
+ This person who is named Brown is within the range of names asked for
+ This person who is named Brian is within the range of names asked for
+ This person who is named Damron is within the range of names asked for
+ This person who is named Day is within the range of names asked for
+ This person who is named Delsing is within the range of names asked for
+ This person who is named Demsey is within the range of names asked for
+ This person who is named Dougherty is within the range of names asked for
+ This person who is named Dowdall is within the range of names asked for
+ This person who is named Driggers is within the range of names asked for
+ This person who is named Dunlap is within the range of names asked for
+ This person who is named Durant is within the range of names asked for
+ This employee named Edwards total salary is $99
+ This employee named Estes total salary is $65
+ This person who is named Kanada is within the range of names asked for
+ This person who is named Kase is within the range of names asked for
+ This person who is named Kelly is within the range of names asked for
+ This person who is named Kendall is within the range of names asked for
+ This person who is named Kite is within the range of names asked for
+ This person who is named Lancaster is within the range of names asked for
+ This person who is named Leonard is within the range of names asked for
+ This person who is named Lickliter is within the range of names asked for
+ This person who is named Lowery is within the range of names asked for
+ This person who is named Magee is within the range of names asked for
+ This person who is named Maginnes is within the range of names asked for
+ This person who is named Mahaffey is within the range of names asked for
+ This employee named Martin total salary is $0
+ This person who is named Martin is within the range of names asked for
+ This employee named Mayfair total salary is $60
+ This person who is named Mayfair is within the range of names asked for
+ This employee named McGovern total salary is $33.5
+ This person who is named McGovern is within the range of names asked for
+ This person who is named McRoy is within the range of names asked for
+ This employee named Mednick total salary is $0
+ This person who is named Mednick is within the range of names asked for
+ This person who is named Micheel is within the range of names asked for
+ This person who is named Mollica is within the range of names asked for
+ This person who is named Nelson is within the range of names asked for
+ This person who is named Norman is within the range of names asked for
+ This person who is named O'Keefe is within the range of names asked for
+ This person who is named Parry is within the range of names asked for
+ This person who is named Pate is within the range of names asked for
+ This person who is named Pernice is within the range of names asked for
+ This person who is named Perry is within the range of names asked for
+ This person who is named Porter is within the range of names asked for
+ This person who is named Price is within the range of names asked for
+ This person who is named Pride is within the range of names asked for
+ This person who is named Purtzer is within the range of names asked for
+ This person who is named Quigley is within the range of names asked for
+ This person who is named Reeves is within the range of names asked for
+ This person who is named Rinker is within the range of names asked for
+ This person who is named Roberts is within the range of names asked for
+ This employee named Rodriguez total salary is $0
+ This person who is named Rodriguez is within the range of names asked for
+ This employee named Rose total salary is $0
+ This person who is named Rose is within the range of names asked for
+ This person who is named Royer is within the range of names asked for
+ This person Rymer made a low amount of $3 per hour
+ This person who is named Rymer is within the range of names asked for
+ This person who is named Sauers is within the range of names asked for
+ This person who is named Scherrer is within the range of names asked for
+ This person who is named Silveira is within the range of names asked for
+ This person who is named Simpson is within the range of names asked for
+ This person who is named Simpson is within the range of names asked for
+ This person who is named Skinner is within the range of names asked for
+ This person who is named Smith is within the range of names asked for
+ This employee named Springer total salary is $75
+ This person who is named Springer is within the range of names asked for
+ This person who is named Standly is within the range of names asked for
+ This person who is named Stewart is within the range of names asked for
+ This person who is named Stockton is within the range of names asked for
+ This person who is named Strange is within the range of names asked for
+ This person who is named Sullivan is within the range of names asked for
+ This person who is named Sutherland is within the range of names asked for
+ This person who is named Sutherland is within the range of names asked for
+ This person who is named Sutterfield is within the range of names asked for
+ This person who is named Sutton is within the range of names asked for
+ This person who is named Tataurangi is within the range of names asked for
+ This person who is named Tesori is within the range of names asked for
+ This person who is named Thorpe is within the range of names asked for
+ This person who is named Toms is within the range of names asked for
+ This person who is named Triplett is within the range of names asked for
+ This person who is named Tryba is within the range of names asked for
+ This person who is named Twitty is within the range of names asked for
+ This person who is named Tyner is within the range of names asked for
+ This person who is named Uresti is within the range of names asked for
+ This person who is named Verplank is within the range of names asked for
+ This person who is named Vander is within the range of names asked for
+ This person who is named Wadkins is within the range of names asked for
+ This person who is named Waldorf is within the range of names asked for
+ This person who is named Weibring is within the range of names asked for
+ This person who is named Whaley is within the range of names asked for
+ This person who is named Wilson is within the range of names asked for
+ This person who is named Wolcott is within the range of names asked for
+ This person who is named Wood is within the range of names asked for
+ This person who is named Zoeller is within the range of names asked for
+==============================Finished===================================
+salary_file.txt
+The total of hourly wage is: 3509.5
+Rodriguez worked least amount hours
+Sutherland earned the most money
+The total number of employees is: 149
+  adding: ../As4_jcarpentier/ (stored 0%)
+  adding: ../As4_jcarpentier/salary_file.txt (deflated 51%)
+  adding: ../As4_jcarpentier/As4_jcarpentier.out (deflated 88%)
+  adding: ../As4_jcarpentier/oneOS.txt (deflated 30%)
+  adding: ../As4_jcarpentier/As4_jcarpentier.sh (deflated 59%)
+  adding: ../As4_jcarpentier/masters_file.txt (deflated 46%)
+  adding: ../As4_jcarpentier/As4_jcarpentier.awk (deflated 59%)
+  adding: ../As4_jcarpentier/name_file.txt (deflated 48%)
+  adding: ../As4_jcarpentier/long_file(1).txt (deflated 59%)
+  adding: ../As4_jcarpentier/awkprof.out (stored 0%)
