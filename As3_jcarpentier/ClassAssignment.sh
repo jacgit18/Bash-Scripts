@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 echo "pos par one" $1
-echo "all pos pars" $#
+echo "all pos pars" $@
 
 
 # -p displays prompt only when input comes from the keyboard

@@ -208,7 +208,7 @@ FuncCall
 
 
 # :ab: the semmi colon at beginging handles errors avoid also >&2 handles output errors
-# doesnt look l:)       echo "Option -$OPTARG requires an argument." >&2       exit 1       ;;   ike you can pass multiple parameters in this format xyz: 
+# doesnt look l:)       echo "Option -$OPTARG requires an argument." >&2       exit 1       ;;   like you can pass multiple parameters in this format xyz: 
 while getopts "xyZ:" opt_var1; do
     case $opt_var1 in
           x) echo "-x was triggered, Parameter: ${OPTARG}" >&2 ;;

@@ -1,11 +1,12 @@
 #!/bin/bash -e
+
+
+echo "What is your awk and txt file name";
+awkFile=$1; txtFile=$2;
 function  AwkGetter (){
 #    >your8.txt # which makes a file
 
 # As4_jcarpentier.awk salary_file.txt
-echo "What is your awk and txt file name";
-read awkFile txtFile;
-
 
 #  check if a file exists, if a file is readable or if the file has extension .awk
 if [[ -f ./"$awkFile" && -x ./"$awkFile" && ${awkFile: -4 } == ".awk" ]]; then 
