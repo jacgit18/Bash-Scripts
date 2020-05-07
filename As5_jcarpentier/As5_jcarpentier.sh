@@ -42,17 +42,27 @@
 #    Log as a user that you created in Part 1 of the assignment using user_name and user_password. If you successfully logged 
 #     to the new account, write “Yes, I successfully logged in as the new user” as a note when submitting it in Blackboard. 
 
-# Functions affect positional parameters
-User=$1
-Pass=$2
-function SedGetter (){
+# Functions affect positional parameters so create outside function
+Username=$1;
+Pass=$2;
+# positional parameter range fr0m $0 to $9
+#function SedGetter (){
 
-echo "Username is $User "
-echo "Password is $Pass "
+echo "Username is $Username ";
+echo "Password is $Pass ";
 
-echo "Username and password $@ "
+# echo "$0"; # prints shell script name which is at postion zero
+# echo "Username and password $@ "; # displays param passed 
+# echo "Number of param $# "; # displays count of param
 
-echo "Number of param $# "
+
+# Create user in home dir and print it and delete and print again
+ sudo adduser --home /home/$Username $Username; # how pass password
+# useradd -m -p $(openssl passwd -1 -salt $SALT $PASS);
+# echo $Pass | passwd --stdin $Pass
+ls /home;
+sudo userdel -r $Username;
+ls /home;
 
 while getopts "f:" opt_var1; do
     case $opt_var1 in
@@ -65,10 +75,10 @@ exit 0
 
 #zip -r As5_jcarpentier ../As5_jcarpentier
 
-}
+#}
 
 
 
-SedGetter "$@" "$#" 
+#SedGetter "$@" "$#" 
  
 
