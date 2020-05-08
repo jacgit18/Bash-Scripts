@@ -14,6 +14,7 @@ sudo add-apt-repository -y ppa:obsproject/obs-studio
 sudo apt -y install aptitude
 sudo aptitude -y update && sudo aptitude -y upgrade
 
+history >> file.txt
 
 
 sudo aptitude -y install flatpak
