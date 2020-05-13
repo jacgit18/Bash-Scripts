@@ -1,0 +1,28 @@
+An operating system (OS) is system software that manages computer hardware, software resources, and provides common services for computer programs.
+
+Time-sharing operating systems schedule tasks for efficient use of the system and may also include accounting software for cost allocation of processor time, mass storage, printing, and other resources.
+
+For hardware functions such as input and output and memory allocation, the operating system acts as an intermediary between programs and the computer hardware, although the application code is usually executed directly by the hardware and frequently makes system calls to an OS function or is interrupted by it. 
+Operating systems are found on many devices that contain a computer – from cellular phones and video game consoles to web servers and supercomputers.
+
+The dominant desktop operating system is Microsoft Windows with a market share of around 82.74%. 
+macOS by Apple Inc. is in second place (13.23%), and the varieties of Linux are collectively in third place (1.57%). 
+In the mobile (including smartphones and tablets) sector, Google android's share is up to 70% in the year 2017. 
+According to third quarter 2016 data, Android's share on smartphones is dominant with 87.5 percent with also a growth rate of 10.3 percent per year, followed by Apple's iOS with 12.1 percent with per year decrease in market share of 5.2 percent, while other operating systems amount to just 0.3 percent.
+Linux distributions are dominant in the server and supercomputing sectors. Other specialized classes of operating systems, such as embedded and real-time systems, exist for many applications. 
+
+Single- and multi-tasking
+
+A single-tasking system can only run one program at a time, while a multi-tasking operating system allows more than one program to be running in concurrency. 
+This is achieved by time-sharing, where the available processor time is divided between multiple processes. 
+These processes are each interrupted repeatedly in time slices by a task-scheduling subsystem of the operating system. 
+Multi-tasking may be characterized in preemptive and co-operative types. 
+In preemptive multitasking, the operating system slices the CPU time and dedicates a slot to each of the programs. 
+Unix-like operating systems, such as Solaris and Linux—as well as non-Unix-like, such as AmigaOS—support preemptive multitasking. 
+Cooperative multitasking is achieved by relying on each process to provide time to the other processes in a defined manner. 
+16-bit versions of Microsoft Windows used cooperative multi-tasking. 32-bit versions of both Windows NT and Win9x, used preemptive multi-tasking.
+Single- and multi-user
+
+Single-user operating systems have no facilities to distinguish users, but may allow multiple programs to run in tandem.
+A multi-user operating system extends the basic concept of multi-tasking with facilities that identify processes and resources, such as disk space, belonging to multiple users, and the system permits multiple users to interact with the system at the same time. 
+Time-sharing operating systems schedule tasks for efficient use of the system and may also include accounting software for cost allocation of processor time, mass storage, printing, and other resources to multiple users. 
