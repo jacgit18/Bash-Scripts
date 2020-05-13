@@ -2,7 +2,7 @@
 
 
 echo "What is your awk and txt file name";
-awkFile=$1; txtFile=$2;
+awkFile=$1; txtFile=$2; # Used positional parameter instead of read
 function  AwkGetter (){
 #    >your8.txt # which makes a file
 
