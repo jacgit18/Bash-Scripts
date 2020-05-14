@@ -12,17 +12,26 @@
 
 # 1) check also if there are exactly 2 non-empty positional parameters
 
-# 4) you have to retrieve argument that was passed to option -f somewhere in or after line  29   
-               # if [[ ! $@ =~ ^\-.+ && $# > 1 ]];then 
+# if opt_used is true 
+# check $Username & $Pass vairiables are  empty-> if empty call error
+# run useradd with ridirection to opt_file (useradd $Username $Pass > opt_file)
+
+# if opt_used is false get pos param which changes to $1 $2
+# $Username $Pass and run useradd without redirectioning  
+#  useradd $Username $Pass
+
+# check how account was create by accessing it with $Username $Pass
 
 function  ErrorChecker(){
   echo "Error"
   exit 1
+  
 }
  opt_used="false"
 
 if [[ ! $@ =~ ^\-.+ ]];then 
- echo "Missing -f flag"
+  echo "Missing -f flag "
+  ErrorChecker
 fi
  while getopts ":f:" opt_var1; do
      case $opt_var1 in
@@ -35,11 +44,11 @@ fi
                   # positional parameter range from $0 to $9
                   # echo "$0"; # prints shell script name which is at postion zero
                 fi
-                echo "Argument for Username & Password passed & are $2 & $3" >&2 
+                echo "Argument $2 & $3 where passed to username & password" >&2 
                 opt_used="true"
                 opt_file=$OPTARG
-                Username=$2
-                Pass=$3
+                Username=$2 
+                Pass=$3 
                 ;;# displays all param passed 
                
 
@@ -91,14 +100,16 @@ fi
 # fi
 
 # can be done in awk 
-sed -r -i 's/^\b(An|A|The)\b//gI' long_file.txt
-sed -r -i 's/-/--/g' long_file.txt
+# sed -r -i 's/^\b(An|A|The)\b//gI' long_file.txt
+# sed -r -i 's/-/--/g' long_file.txt
+
 #dat=`date "+%D" `
 # sed -ri "1s#(.*)#${dat}\1#" long_file.txt
 #sed -i -e '$s/$/Joshua Carpentier/' long_file.txt
 #sed -i "s/\$/ $var/" long_file.txt 
-echo >> long_file.txt
-echo "Joshua Carpentier" >> long_file.txt
-date >> long_file.txt
-cp long_file.txt long_file.txt.new
+
+# echo >> long_file.txt
+# echo "Joshua Carpentier" >> long_file.txt
+# date >> long_file.txt
+# cp long_file.txt long_file.txt.new
 
