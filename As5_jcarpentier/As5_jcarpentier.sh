@@ -11,17 +11,22 @@
 function  ErrorChecker(){
   echo "Error"
   exit 1
-  
+}
+
+function  AccountChecker(){
+  ls /home;
+  cat /etc/passwd 
 }
 
 if [[ ! $@ =~ ^\-.+ ]];then 
   echo "Missing -f flag "
-  ErrorChecker
+  
 fi
  opt_used="false"
  while getopts ":f:" opt_var1; do
      case $opt_var1 in
-            f) echo -n "Option $1 was passed "
+            f) #if [[ opt_used = true ]]; then
+               echo -n "Option $1 was passed "
                if [[ $# -lt 3 ]]; then 
                     echo "Not enough parameter less than three" 
                     ErrorChecker
@@ -35,12 +40,12 @@ fi
                 opt_file=$OPTARG
                 Username=$2 
                 Pass=$3 
-                # if [[ opt_used = true ]]; then
-                #     -z $Username $Pass
-                #     $Username=$1
-                #     $Pass=$2
-                #     echo "$@"
-                # fi
+                if [[ opt_used = true ]]; then
+                    -n $Username $Pass
+                    $Username=$1
+                    $Pass=$2
+                    echo "$@"
+                fi
                 ;;# displays all param passed 
                
 
@@ -64,12 +69,13 @@ sudo useradd -m -p $(openssl passwd -1 ${Pass}) -s /bin/bash ${Username}
 # decrypt
 # echo $Pass | openssl enc -base64 -d -e -aes-256-cbc -pbkdf2 -iter 100000 -nosalt  -pass pass:garbageKey 
 # #sudo passwd $Username
-#  ls /home;
+#  
 #  sudo userdel -r $Username; # test purposes
 #  ls /home;
 
 if [[ -d "/home/$Username" ]] && grep -Fq "$Username" /etc/passwd; then
   echo "$Username was created in home dir and exist in passwd "
+  AccountChecker
 else 
   echo "$Username Doesnt exist in home or /etc/passwd "
   ErrorChecker
