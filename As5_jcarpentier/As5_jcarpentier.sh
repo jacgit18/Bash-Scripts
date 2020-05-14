@@ -1,17 +1,5 @@
 #!/bin/bash -e
 
-# In your script: 
-# --------------
-#    Create a new user on the Linux computer/system on which your script is running
-#     (you may have to run your script with root privileges or using sudo command to do it)
-#       o User’s account should have name denoted by the first positional parameter (e.g., user_name) 
-#       o User’s account should have password denoted by the second positional parameter (e.g., user_password). 
-#         Note that when assigning a password to a user, it must be in encrypted form – research how to do it
-#          correctly) 
-
-
-# 1) check also if there are exactly 2 non-empty positional parameters
-
 # if opt_used is true 
 # check $Username & $Pass vairiables are  empty-> if empty call error
 # run useradd with ridirection to opt_file (useradd $Username $Pass > opt_file)
@@ -20,19 +8,17 @@
 # $Username $Pass and run useradd without redirectioning  
 #  useradd $Username $Pass
 
-# check how account was create by accessing it with $Username $Pass
-
 function  ErrorChecker(){
   echo "Error"
   exit 1
   
 }
- opt_used="false"
 
 if [[ ! $@ =~ ^\-.+ ]];then 
   echo "Missing -f flag "
   ErrorChecker
 fi
+ opt_used="false"
  while getopts ":f:" opt_var1; do
      case $opt_var1 in
             f) echo -n "Option $1 was passed "
@@ -49,6 +35,12 @@ fi
                 opt_file=$OPTARG
                 Username=$2 
                 Pass=$3 
+                # if [[ opt_used = true ]]; then
+                #     -z $Username $Pass
+                #     $Username=$1
+                #     $Pass=$2
+                #     echo "$@"
+                # fi
                 ;;# displays all param passed 
                
 
@@ -64,10 +56,11 @@ fi
 
 
 # Create user with encrypted password
-# sudo useradd -m -p $(openssl passwd -1 ${Pass}) -s /bin/bash -d ${Username}
+sudo useradd -m -p $(openssl passwd -1 ${Pass}) -s /bin/bash ${Username}
 
-# sudo useradd -c "$Username" -d /home/$Username -m -U -s /bin/bash -k /etc/skel $Username -p $Pass
+# sudo useradd -c "$Username" /home/$Username -m -U -s /bin/bash -k /etc/skel $Username -p $Pass
 # echo $Pass | openssl enc -base64 -e -aes-256-cbc -pbkdf2 -iter 100000 -nosalt  -pass pass:garbageKey # changes passwd
+
 # decrypt
 # echo $Pass | openssl enc -base64 -d -e -aes-256-cbc -pbkdf2 -iter 100000 -nosalt  -pass pass:garbageKey 
 # #sudo passwd $Username
@@ -81,8 +74,6 @@ else
   echo "$Username Doesnt exist in home or /etc/passwd "
   ErrorChecker
 fi  
-
-#zip -r As5_jcarpentier ../As5_jcarpentier
 
 # if grep -Fq "$Username" /etc/passwd
 # then
@@ -113,3 +104,4 @@ fi
 # date >> long_file.txt
 # cp long_file.txt long_file.txt.new
 
+#zip -r As5_jcarpentier ../As5_jcarpentier
