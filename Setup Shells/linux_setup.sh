@@ -22,6 +22,8 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 sudo flatpak install flathub org.linux_hardware.hw-probe
 sudo -E flatpak run org.linux_hardware.hw-probe -all -upload
 sudo aptitude -y install snapd
+sudo snap install dbeaver-ce
+
 sudo aptitude -y install xscreensaver
 sudo aptitude -y install clamav clamtk
 sudo aptitude -y install asciinema
