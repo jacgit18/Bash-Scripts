@@ -47,7 +47,7 @@ sudo aptitude -y install gnome-shell-pomodoro
 sudo aptitude -y install obs-studio
 sudo aptitude -y install timeshift
 sudo aptitude -y install muon
-sudo apt -y install openjdk-11-*
+sudo apt-get -y install openjdk-11-*
 sudo aptitude -y install qemu-kvm
 sudo adduser jac kvm && sudo chown jac /dev/kvm
 sudo aptitude -y install  git git-extras
